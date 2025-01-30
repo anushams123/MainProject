@@ -1,0 +1,265 @@
+/* Scoped styles for the StudentProfile component */
+
+/* Global Styles */
+.student-profile-container {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.student-profile-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.student-profile-container h1, .student-profile-container h2, .student-profile-container h3, .student-profile-container p {
+  margin: 0;
+}
+
+.student-profile-container input, .student-profile-container button {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* Layout */
+.student-profile-container .dashboard-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navigation Bar */
+.student-profile-container .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  padding: 15px 30px;
+}
+
+.student-profile-container .nav-left .logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.student-profile-container .nav-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.student-profile-container .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.student-profile-container .nav-link {
+  color: white;
+  margin-left: 20px;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.student-profile-container .nav-link:hover, .student-profile-container .nav-link.active {
+  color: #3498db;
+}
+
+.student-profile-container .logout-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.student-profile-container .logout-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Hero Section */
+.student-profile-container .student-profile {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.student-profile-container .profile-container {
+  padding: 40px;
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.student-profile-container .profile-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.student-profile-container .error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Profile Form Styles */
+.student-profile-container .input-group {
+  margin-bottom: 20px;
+}
+
+.student-profile-container .input-group label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.student-profile-container .input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.student-profile-container .input-group input:focus {
+  border-color: #3498db;
+}
+
+.student-profile-container .edit-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.student-profile-container .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.student-profile-container .btn-save {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.student-profile-container .btn-save:hover {
+  background-color: #27ae60;
+}
+
+.student-profile-container .btn-edit {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.student-profile-container .btn-edit:hover {
+  background-color: #e67e22;
+}
+
+/* Profile Info Styles */
+.student-profile-container .profile-info {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.student-profile-container .profile-info p {
+  margin-bottom: 10px;
+}
+
+.student-profile-container .profile-info strong {
+  font-weight: 600;
+}
+
+/* Joined Programs Section */
+.student-profile-container .programs-section {
+  margin-top: 40px;
+}
+
+.student-profile-container .programs-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.student-profile-container .programs-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.student-profile-container .programs-section li {
+  background-color: #f4f6f9;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.student-profile-container .programs-section li strong {
+  font-weight: bold;
+}
+
+.student-profile-container .programs-section p {
+  color: #666;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Footer */
+.student-profile-container footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.student-profile-container footer a {
+  color: white;
+}
+
+.student-profile-container footer a:hover {
+  color: #3498db;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .student-profile-container .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .student-profile-container .nav-right {
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .student-profile-container .nav-link {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .student-profile-container .profile-container {
+    padding: 20px;
+  }
+
+  .student-profile-container .input-group input {
+    font-size: 0.9rem;
+  }
+
+  .student-profile-container .programs-section ul {
+    padding-left: 20px;
+  }
+}
